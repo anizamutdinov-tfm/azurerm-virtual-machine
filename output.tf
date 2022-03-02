@@ -1,14 +1,9 @@
-#output "subnet_name" {
-#  value       = azurerm_subnet.subnet.name
-#  description = "Subnet name"
-#}
-#
-#output "subnet_id" {
-#  value       = azurerm_subnet.subnet.id
-#  description = "Subnet id"
-#}
-#
-#output "subnet_cidr" {
-#  value       = azurerm_subnet.subnet.address_prefixes
-#  description = "Subnet id"
-#}
+output "vm_name" {
+  value       = azurerm_virtual_machine.vm.name
+  description = "Virtual machine name"
+}
+
+output "vm_id" {
+  value       = azurerm_virtual_machine.vm.id
+  description = "Virtual machine id"
+}
